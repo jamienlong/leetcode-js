@@ -12,7 +12,7 @@ const isPalindrome = function (x) {
 
 	while (number > 0) {
 		reverse = (reverse * 10) + (number % 10);
-		number = Number(number / 10);
+		number = parseInt(number / 10, 10);
 	}
 
 	return x === reverse;
